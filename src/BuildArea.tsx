@@ -17,10 +17,11 @@ export default function BuildArea ({ card, updateCard }: BuildAreaProps) {
           className="bg-secondary m-3 w-75 shadow-sm p-3 border" // Card display box
           style={{
             height: "500px",
-            color: card?.side ? "red" : "black" // Conditional text color based on card.side
+            fontSize: "30px",
+            color: card?.side ? "blue" : "black" // Conditional text color based on card.side
             }}
         >
-            { card?.name } {/* Display card name */}
+            <div className="text-center my-5">{ card?.name }</div> {/* Display card name */}
         </div>
       </div>
       <div className="d-flex p-3 justify-content-center"> {/* Note editing area */}
