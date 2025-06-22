@@ -2,7 +2,7 @@ import Toolbar from "./Toolbar.tsx"
 import Sidebar from "./Sidebar.tsx"
 import BuildArea from "./BuildArea.tsx"
 import {useEffect, useState} from "react"
-import reactLogo from './assets/react.svg'
+import cardBack from './assets/Magic_card_back.webp'
 import type { Card } from "./types.ts"
 import HeaderEditor from "./HeaderEditor.tsx"
 
@@ -11,7 +11,7 @@ const testCards = [
   {
     id: 0,
     order: 1,
-    image: reactLogo,
+    image: cardBack,
     name: "Lightning Bolt",
     side: true,
     notes: "Placeholder notes"
@@ -19,7 +19,7 @@ const testCards = [
   {
     id: 1,
     order: 2,
-    image: reactLogo,
+    image: cardBack,
     name: "Rhystic Study",
     side: false,
     notes: "Placeholder notes"
@@ -27,7 +27,7 @@ const testCards = [
   {
     id: 2,
     order: 3,
-    image: reactLogo,
+    image: cardBack,
     name: "Cultivate",
     side: true,
     notes: "Placeholder notes"
@@ -35,7 +35,7 @@ const testCards = [
   {
     id: 3,
     order: 4,
-    image: reactLogo,
+    image: cardBack,
     name: "Diaboloic Tutor",
     side: false,
     notes: "Placeholder notes"
@@ -56,7 +56,7 @@ export default function App() {
     const newCard = {
       id: cards.length ? cards[cards.length - 1].id + 1 : 0,
       order: 5,
-      image: reactLogo,
+      image: cardBack,
       name: "",
       side: false,
       notes: "Placeholder notes"
