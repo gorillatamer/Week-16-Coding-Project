@@ -1,54 +1,54 @@
-# React + TypeScript + Vite
+React Card Builder App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple card builder tool created as part of a React development class assignment. The app allows users to create, view, edit, and delete cards in a visual list format, with each card containing customizable fields such as name, sideboard status, and notes.
+✨ Features
 
-Currently, two official plugins are available:
+    Add new cards to the list
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    Select a card to view its name and sideboard status
 
-## Expanding the ESLint configuration
+    Edit card notes using a live textarea
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+    Toggle sideboard status via a modal dialog
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+    Delete cards from the list
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+    Update the app header using a dedicated form with title and description inputs
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🧱 Built With
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+    React
+
+    TypeScript
+
+    Bootstrap (via classNames)
+
+    React-Bootstrap (for modal functionality)
+
+📘 Notes
+
+This app was built specifically to meet class assignment requirements and demonstrate familiarity with:
+
+    React components and props
+
+    Local state with useState
+
+    Event handling and controlled inputs
+
+    Conditional rendering
+
+    Component composition
+
+🚧 Future Improvements
+
+As this was developed for coursework, some expected features or refinements may be missing. Planned additions or improvements could include:
+
+    Editable card names
+
+    Drag-and-drop reordering
+
+    Persistent storage (e.g., localStorage or backend)
+
+    Card image selection and customization
+
+    Refined styling and layout polish
