@@ -1,5 +1,5 @@
 import { type ChangeEvent } from "react"
-import BuildAreaButton from "./BuildAreaButton.tsx"
+import BuildAreaButton from "../BuildAreaButton.tsx"
 import saveIcon from "./assets/saveicon.svg"
 import cancelIcon from "./assets/cancelicon.svg"
 

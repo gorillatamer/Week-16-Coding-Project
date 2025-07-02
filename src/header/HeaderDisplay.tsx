@@ -1,4 +1,4 @@
-import BuildAreaButton from "./BuildAreaButton"
+import BuildAreaButton from "../BuildAreaButton"
 import editIcon from "./assets/editicon.svg"
 
 // Props required to display the header and trigger edit mode
